@@ -1,7 +1,6 @@
 CREATE TABLE campus (
 	campus_id SERIAL UNIQUE,
 	name VARCHAR ( 150 ) UNIQUE NOT NULL,
-	address VARCHAR ( 150 ) NOT NULL,
     good_value INT NOT NULL DEFAULT 400,
     max_value INT NOT NULL DEFAULT 700,
 	critical_value INT NOT NULL DEFAULT 800,
@@ -27,9 +26,9 @@ CREATE TABLE lokaal (
 );
 
 CREATE TABLE sensor (
-    sensor_id SERIAL UNIQUE,
+    sensor_id VARCHAR ( 150 ) UNIQUE,
     lokaal_id serial,
-    toegevoegd boolean,
+    new boolean,
     PRIMARY KEY ( sensor_id ),
     FOREIGN KEY (lokaal_id) REFERENCES lokaal (lokaal_id)
 );
