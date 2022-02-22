@@ -21,6 +21,7 @@ CREATE TABLE persoon (
 CREATE TABLE lokaal (
 	lokaal_id SERIAL UNIQUE,
     campus_id serial,
+    lokaal_naam VARCHAR ( 150 ) NOT NULL,	
     PRIMARY KEY ( lokaal_id ),
     FOREIGN KEY (campus_id) REFERENCES campus (campus_id)
 );
