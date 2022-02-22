@@ -29,6 +29,7 @@ CREATE TABLE lokaal (
 CREATE TABLE sensor (
     sensor_id SERIAL UNIQUE,
     lokaal_id serial,
+    toegevoegd boolean,
     PRIMARY KEY ( sensor_id ),
     FOREIGN KEY (lokaal_id) REFERENCES lokaal (lokaal_id)
 );
