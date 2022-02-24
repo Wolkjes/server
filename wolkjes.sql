@@ -7,6 +7,12 @@ CREATE TABLE campus (
     PRIMARY KEY ( campus_id )
 );
 
+CREATE TABLE campus_persoon
+(
+    campus_id SERIAL UNIQUE,
+    persoon_id SERIAL UNIQUE
+);
+
 CREATE TABLE persoon (
 	persoon_id SERIAL UNIQUE,
     campus_id serial,
