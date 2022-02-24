@@ -1,9 +1,8 @@
 CREATE TABLE campus (
 	campus_id SERIAL UNIQUE,
 	name VARCHAR ( 150 ) UNIQUE NOT NULL,
-    good_value INT NOT NULL DEFAULT 400,
-    max_value INT NOT NULL DEFAULT 700,
-	critical_value INT NOT NULL DEFAULT 800,
+    warning_value INT NOT NULL DEFAULT 400,
+    critical_value INT NOT NULL DEFAULT 700,
     PRIMARY KEY ( campus_id )
 );
 
