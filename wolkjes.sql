@@ -14,13 +14,11 @@ CREATE TABLE campus_persoon
 
 CREATE TABLE persoon (
 	persoon_id SERIAL UNIQUE,
-    campus_id serial,
 	username VARCHAR ( 150 ) UNIQUE NOT NULL,
 	email VARCHAR ( 150 ) NOT NULL,
     password VARCHAR ( 256 ) NOT NULL,
     role VARCHAR ( 150 ) NOT NULL DEFAULT 'user',
     PRIMARY KEY ( persoon_id ),
-    FOREIGN KEY (campus_id) REFERENCES campus (campus_id)
 );
 
 CREATE TABLE lokaal (
