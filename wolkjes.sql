@@ -18,7 +18,7 @@ CREATE TABLE persoon (
 	email VARCHAR ( 150 ) NOT NULL,
     password VARCHAR ( 256 ) NOT NULL,
     role VARCHAR ( 150 ) NOT NULL DEFAULT 'user',
-    PRIMARY KEY ( persoon_id ),
+    PRIMARY KEY ( persoon_id )
 );
 
 CREATE TABLE lokaal (
