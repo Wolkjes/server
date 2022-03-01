@@ -8,14 +8,16 @@ CREATE TABLE campus (
 
 CREATE TABLE campus_persoon
 (
-    campus_id SERIAL UNIQUE,
-    persoon_id SERIAL UNIQUE
+    campus_id SERIAL,
+    persoon_id SERIAL,
+    FOREIGN KEY (campus_id) REFERENCES campus (campus_id),
+    FOREIGN KEY (persoon_id) REFERENCES persoon (persoon_id) 
 );
 
 CREATE TABLE persoon (
 	persoon_id SERIAL UNIQUE,
 	username VARCHAR ( 150 ) UNIQUE NOT NULL,
-	email VARCHAR ( 150 ) NOT NULL,
+	email VARCHAR ( 150 ) NOT NULL UNIQUE,
     password VARCHAR ( 256 ) NOT NULL,
     role VARCHAR ( 150 ) NOT NULL DEFAULT 'user',
     PRIMARY KEY ( persoon_id )
