@@ -6,14 +6,6 @@ CREATE TABLE campus (
     PRIMARY KEY ( campus_id )
 );
 
-CREATE TABLE campus_persoon
-(
-    campus_id SERIAL,
-    persoon_id SERIAL,
-    FOREIGN KEY (campus_id) REFERENCES campus (campus_id),
-    FOREIGN KEY (persoon_id) REFERENCES persoon (persoon_id) 
-);
-
 CREATE TABLE persoon (
 	persoon_id SERIAL UNIQUE,
 	username VARCHAR ( 150 ) UNIQUE NOT NULL,
@@ -45,4 +37,12 @@ CREATE TABLE machine (
     lokaal_id serial,
     PRIMARY KEY ( machine_id ),
     FOREIGN KEY (lokaal_id) REFERENCES lokaal (lokaal_id)
+);
+
+CREATE TABLE campus_persoon
+(
+    campus_id SERIAL,
+    persoon_id SERIAL,
+    FOREIGN KEY (campus_id) REFERENCES campus (campus_id),
+    FOREIGN KEY (persoon_id) REFERENCES persoon (persoon_id) 
 );
