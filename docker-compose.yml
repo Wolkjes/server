@@ -57,8 +57,8 @@ services:
     image: postgres
     restart: always
     environment: 
-          - POSTGRES_USER=admin
-          - POSTGRES_PASSWORD=admin
+          - POSTGRES_USER=wolkje
+          - POSTGRES_PASSWORD=aMmmbcdMthiYr6zpdBz35FXsxeEfweR9W2yJUyHnpVZQYPZtzPdWkzvAaSenKprW
     ports:
           - '5438:5432'
     volumes:
