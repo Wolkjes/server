@@ -20,7 +20,7 @@ CREATE TABLE lokaal (
     campus_id serial,
     lokaal_naam VARCHAR ( 150 ) NOT NULL,	
     PRIMARY KEY ( lokaal_id ),
-    FOREIGN KEY (campus_id) REFERENCES campus (campus_id)
+    FOREIGN KEY (campus_id) REFERENCES campus (campus_id) ON DELETE CASCADE
 );
 
 CREATE TABLE sensor (
@@ -29,7 +29,7 @@ CREATE TABLE sensor (
     new BOOLEAN,
     id INTEGER,
     PRIMARY KEY ( sensor_id ),
-    FOREIGN KEY (lokaal_id) REFERENCES lokaal (lokaal_id)
+    FOREIGN KEY (lokaal_id) REFERENCES lokaal (lokaal_id) ON DELETE CASCADE
 );
 
 CREATE TABLE machine (
