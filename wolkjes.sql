@@ -3,7 +3,7 @@ CREATE TABLE campus (
 	name VARCHAR ( 150 ) UNIQUE NOT NULL,
     warning_value INT NOT NULL DEFAULT 400,
     critical_value INT NOT NULL DEFAULT 700,
-    PRIMARY KEY ( campus_id )
+    PRIMARY KEY ( campus_id ) 
 );
 
 CREATE TABLE persoon (
@@ -43,6 +43,6 @@ CREATE TABLE campus_persoon
 (
     campus_id SERIAL,
     persoon_id SERIAL,
-    FOREIGN KEY (campus_id) REFERENCES campus (campus_id),
-    FOREIGN KEY (persoon_id) REFERENCES persoon (persoon_id) 
+    FOREIGN KEY (campus_id) REFERENCES campus (campus_id) ON DELETE CASCADE,
+    FOREIGN KEY (persoon_id) REFERENCES persoon (persoon_id) ON DELETE CASCADE
 );
