@@ -8,7 +8,7 @@ CREATE TABLE campus (
 
 CREATE TABLE persoon (
 	persoon_id SERIAL UNIQUE,
-	username VARCHAR ( 150 ) UNIQUE NOT NULL,
+	username VARCHAR ( 150 ) NOT NULL,
 	email VARCHAR ( 150 ) NOT NULL UNIQUE,
     password VARCHAR ( 256 ) NOT NULL,
     role VARCHAR ( 150 ) NOT NULL DEFAULT 'user',
