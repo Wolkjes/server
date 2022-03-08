@@ -46,3 +46,6 @@ CREATE TABLE campus_persoon
     FOREIGN KEY (campus_id) REFERENCES campus (campus_id) ON DELETE CASCADE,
     FOREIGN KEY (persoon_id) REFERENCES persoon (persoon_id) ON DELETE CASCADE
 );
+
+-- Insert default admin
+INSERT INTO persoon(username, email, password, role) VALUES ('admin', 'admin', '$2a$10$5lU8PbH2SI3VSLF8BncAq.hvIaF2U.YPEwJUvjdUNsiD.Z/X6gn1u', 'admin')
