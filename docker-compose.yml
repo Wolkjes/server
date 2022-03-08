@@ -65,17 +65,6 @@ services:
           - ./postgres-data:/var/lib/postgresql/data
           - ./wolkjes.sql:/docker-entrypoint-initdb.d/wolkjes.sql
 
-  frontend:
-    build: .
-    command: sh -c "npm start"
-    ports:
-      - 4200:4200
-    working_dir: /home/node/app
-    volumes:
-      - ./:/home/node/app
-      - node_modules:/home/node/app/node_modules
-  
 volumes:
   grafana_data: {}
   influxdb_data: {}
-  node_modules:
