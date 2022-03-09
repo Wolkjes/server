@@ -33,6 +33,9 @@ The InfluxDB is used to keep all the data of the sensors.
 ## MQTT explorer
 The MQTT explorer is needed to connect all the sensors to the InfluxDB and backend. 
 
+## Grafana
+Grafana is used to make graphs of a single sensor on the website
+
 ## Frontend
 An angular frontend is used for the website. You can also run this on your own with this github repository [https://github.com/Wolkjes/frontend] 
 
