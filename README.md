@@ -59,7 +59,7 @@ At the bottom of the page there is a input field with name "Database", here you 
 
 The next thing you need to do is create an API-key for the application. Press the cog wheel again and select "API keys", next you click on "Add API key". Now you can add a API key, give the key a name and make sure you set the role to ADMIN, don't give the key a time to live.
 
-<img src="images/api_key.png" width="50%" display="inline-block">
+<img src="images/api_key.png">
 
 Now make sure you copy the key, because you won't be able to copy it again. When you have your key, you need to go to the "directory" frontend dan naar de directory "src" dan "app" dan "service" en open dan de file "grafana.service.ts" en verander de "Authorization header" naar "Baerer uw_API_key"
 
