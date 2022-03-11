@@ -46,9 +46,22 @@ A login screen will be shown and you have to login. The first time you login the
 
 Now you will see the overview page of grafana. On the left side you can see a menu. In the menu bar you see a cog wheel, if tou click it, the configuration tab will open. Here you select "Data sources", now select "Add data source" and select "InfluxDB" as type.
 
-Now you will see the configuration screen for a InfluxDB, the name you don't need to change. The url you need to change to http://influxdb:8086/ and at the bottom of the page there is a input field with name "Database", here you fill in "influx". If you did everything correct you click "save and test" and you will see the message "Data source is working"
+<img src="images/dataSources.png" width="35%" display="inline-block">
+<img src="images/influxDB.png" width="60%" display="inline-block">
 
-The next thing you need to do is create an API-key for the application. Press the cog wheel again and select "API keys", next you click on "Add API key". Now you can add a API key, give the key a name and make sure you set the role to ADMIN, don't give the key a time to live. Now make sure you copy the key, because you won't be able to copy it again. When you have your key, you need to go to the "directory" frontend dan naar de directory "src" dan "app" dan "service" en open dan de file "grafana.service.ts" en verander de "Authorization header" naar "Baerer uw_API_key"
+Now you will see the configuration screen for a InfluxDB, the name you don't need to change. The url you need to change to http://influxdb:8086/.
+
+<img src="images/settingsInflux.png" width="50%" display="inline-block">
+
+At the bottom of the page there is a input field with name "Database", here you fill in "influx". If you did everything correct you click "save and test" and you will see the message "Data source is working"
+
+<img src="images/settingsInfluxSave.png" width="50%" display="inline-block">
+
+The next thing you need to do is create an API-key for the application. Press the cog wheel again and select "API keys", next you click on "Add API key". Now you can add a API key, give the key a name and make sure you set the role to ADMIN, don't give the key a time to live.
+
+<img src="images/api_key.png" width="50%" display="inline-block">
+
+Now make sure you copy the key, because you won't be able to copy it again. When you have your key, you need to go to the "directory" frontend dan naar de directory "src" dan "app" dan "service" en open dan de file "grafana.service.ts" en verander de "Authorization header" naar "Baerer uw_API_key"
 
 ![BaererToken](images/baererToken.png)
 
