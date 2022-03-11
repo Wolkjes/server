@@ -2,6 +2,8 @@
 
 With this repository you can easily run our entire project on a server.
 
+It is not done completely be sure to read this: [FrontAndBackend](FrontAndBackend/READMEFrontAndBackend)
+
 If you want to edit the backend or frontend locally, then you will also need this repository to have a working website.
 
 ## PostgresQL

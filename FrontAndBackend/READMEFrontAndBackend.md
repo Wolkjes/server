@@ -24,6 +24,8 @@ docker-compose up -d
 ## env file
 Othello made the beginning for the environment file but this is not done. You can see this on the **'docker'** branch on both the frontend and backend. 
 
+I think this worked but this branch is not the latest version and I only Othello has the env file for the frontend so I couldn't test it completely...
+
 This is the .env file that you need to add to the root of the backend.
 
 ![env file Bakcen](envBackend.png)
