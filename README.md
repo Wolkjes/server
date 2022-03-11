@@ -4,6 +4,16 @@ With this repository you can easily run our entire project on a server.
 
 If you want to edit the backend or frontend locally, then you will also need this repository to have a working website.
 
+## PostgresQL
+
+The current user to acces the database is `wolkje` with a `password`, we strongly recommand you to change this password before you run the server. You will also need to change the password and the user in the backend directory of the file `db.config`.
+
+<img src="images/yml.png"></img>
+
+## Environment file
+
+At the moment the password of the postres databank is located at the docker compose-compose.yml file. But this isn't very secure. But there is still room to improve and add an environment file.
+
 ## First start
 
 Clone this repository onto a server or it can also be run locally on your own computer.
@@ -61,7 +71,7 @@ The next thing you need to do is create an API-key for the application. Press th
 
 <img src="images/api_key.png">
 
-Now make sure you copy the key, because you won't be able to copy it again. When you have your key, you need to go to the "directory" frontend dan naar de directory "src" dan "app" dan "service" en open dan de file "grafana.service.ts" en verander de "Authorization header" naar "Baerer uw_API_key"
+Now make sure you copy the key, because you won't be able to copy it again. When you have your key, you need to go to the `directory frontend` then to the directory `src` then to `app` then to `service` and open the file `grafana.service.ts` and `lokaal.service.ts` and change the `Authorization header` to `Baerer + uw_API_key`
 
 ![BaererToken](images/baererToken.png)
 
