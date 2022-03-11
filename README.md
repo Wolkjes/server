@@ -19,7 +19,7 @@ At the moment the password of the postres databank is located at the docker comp
 Clone this repository onto a server or it can also be run locally on your own computer.
 Then go to the root of the project and run:
 
-```
+``` bash
 docker-compose up -d
 ```
 
@@ -75,6 +75,10 @@ Now make sure you copy the key, because you won't be able to copy it again. When
 
 ![BaererToken](images/baererToken.png)
 
+
+# Seperate docker-compose file:
+
+[FrontAndBackend](FrontAndBackend/READMEFrontAndBackend)
 ## Frontend
 
 An angular frontend is used for the website. You can also run this on your own with this github repository [https://github.com/Wolkjes/frontend]

@@ -7,15 +7,23 @@ Normally the contents of this docker-compose file needs to be inside the main do
 ## How to run
 
 Navigate to the FrontAndBackend folder in your terminal 
+
+``` bash
+cd FrontAndBackend
 ```
-cd FrontAndBacken`
-```
+
 and run the following commands:
 
-```
-
+``` bash
 git clone https://github.com/Wolkjes/frontend.git
 git clone https://github.com/Wolkjes/backend.git
 
 docker-compose up -d
 ```
+
+## env file
+Othello made the beginning for the environment file but this is not done. You can see this on the **'docker'** branch on both the frontend and backend. 
+
+This is the .env file that you need to add to the root of the backend.
+
+![env file Bakcen](envBackend.png)
